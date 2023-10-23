@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+    <suite name="All Test Suite">
+        <parameter name="urlAutomationPanda" value="https://automationpanda.com/2021/12/29/want-to-practice-test-automation-try-these-demo-sites/"></parameter>
+        <parameter name="urlFlipkart" value="https://www.flipkart.com/"></parameter>
+        <parameter name="browser" value="edge"></parameter>
+        <test verbose="2" preserve-order="true" name="D:/Selenium/RahulShetty/AWSDevOpsCourse/project/CapStoneProject">
+            <classes>
+
+                <class name="com.virtusa.SeleniumTests">
+                    <methods>
+                        <include name="testAutomationPanda"/>
+                        <include name="testFlipCartSearchIPhone"/>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+</suite>
